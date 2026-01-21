@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Character Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>⚔️ Clash Royale Character Viewer ⚔️ </h1>
+    </header>
+
+    <div class="main-content">
+
+        <!-- DISPLAY -->
+        <div class="display-section">
+            <div id="scene-container">
+                <img id="characterImage" class="character-image" src="" alt="Character">
+            </div>
+
+            <div class="controls">
+                <button id="prevBtn">← Previous</button>
+                <button id="nextBtn">Next →</button>
+            </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="info-panel">
+            <h2 id="charName"></h2>
+            <span id="charRarity" class="rarity"></span>
+
+            <div class="stats">
+                <p><strong>Hitpoints:</strong> <span id="charHP"></span></p>
+                <p><strong>Damage:</strong> <span id="charDamage"></span></p>
+                <p><strong>Speed:</strong> <span id="charSpeed"></span></p>
+                <p><strong>Elixir:</strong> <span id="charElixir"></span></p>
+            </div>
+
+            <p class="description" id="charDescription"></p>
+        </div>
+
+    </div>
+
+    <!-- CHARACTER SELECTOR -->
+    <div class="character-selector">
+        <h3>Select Character</h3>
+        <div class="character-grid" id="characterGrid"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
